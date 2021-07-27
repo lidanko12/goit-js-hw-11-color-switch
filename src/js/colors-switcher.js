@@ -24,8 +24,9 @@ const timer = {
         if (this.isActive) {
             return;
        }
-        this.isActive = true;
-        this.colorsSwitch = setInterval(() =>{ 
+      this.isActive = true;
+        startBtn.disabled = true;
+        this.intervalID = setInterval(() =>{ 
         const min = 0;
         const max = colors.length - 1;
         let i = randomIntegerFromInterval(min, max);
@@ -33,8 +34,9 @@ const timer = {
     }, 1000);
     },
     stop() {
-        clearInterval(this.colorsSwitch);
-    this.isActive = false;
+        clearInterval(this.intervalID);
+      this.isActive = false;
+      this.intervalID = null;
   },
 };
 
