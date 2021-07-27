@@ -3,4 +3,4 @@ const t=["#FFFFFF","#2196F3","#4CAF50","#FF9800","#009688","#795548"],e={startBt
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./js/colors-switcher.js");
 },{"./js/colors-switcher.js":"r0tK"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-11-color-swi/src.09e8b688.js.map
+//# sourceMappingURL=/goit-js-hw-11-color-switch/src.01a72154.js.map
