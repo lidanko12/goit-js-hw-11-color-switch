@@ -1,4 +1,4 @@
-"use strict";
+
 const colors = [
   '#FFFFFF',
   '#2196F3',
@@ -25,7 +25,7 @@ const timer = {
             return;
        }
       this.isActive = true;
-        startBtn.disabled = true;
+    
         this.intervalID = setInterval(() =>{ 
         const min = 0;
         const max = colors.length - 1;
