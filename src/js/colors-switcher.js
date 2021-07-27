@@ -25,7 +25,7 @@ const timer = {
             return;
        }
       this.isActive = true;
-    
+      refs.startBtn.disabled = true;
         this.intervalID = setInterval(() =>{ 
         const min = 0;
         const max = colors.length - 1;
@@ -37,6 +37,7 @@ const timer = {
         clearInterval(this.intervalID);
       this.isActive = false;
       this.intervalID = null;
+       refs.startBtn.disabled = false;
   },
 };
 
